@@ -1,12 +1,11 @@
 import Link from 'next/link'
 import { Section, SectionHeading, SectionSubheading } from '@/components/Section'
 import LogoMarquee from '@/components/LogoMarquee'
-import EventCard from '@/components/EventCard'
 import MemberSpotlight from '@/components/MemberSpotlight'
 import SponsorGrid from '@/components/SponsorGrid'
 import { GlassCard } from '@/components/operate/GlassCard'
 import { BlueprintMicroGrid } from '@/components/operate/BlueprintMicroGrid'
-import eventsData from '@/data/events.json'
+import { KineticHeaderUnderline } from '@/components/operate/KineticHeaderUnderline'
 import sponsorsData from '@/data/sponsors.json'
 import membersData from '@/data/members.json'
 import teamData from '@/data/team.json'
@@ -14,11 +13,6 @@ import testimonialsData from '@/data/testimonials.json'
 import Image from 'next/image'
 
 export default function HomePage() {
-  // Get next 3 upcoming events
-  const upcomingEvents = eventsData
-    .filter(event => new Date(event.date) >= new Date())
-    .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime())
-    .slice(0, 3)
 
   return (
     <>
@@ -66,53 +60,70 @@ export default function HomePage() {
 
       {/* Value Proposition Section */}
       <Section className="bg-gradient-to-b from-blue-600 to-blue-700 relative overflow-hidden">
-        {/* Blueprint Micro-Grid Background */}
+        {/* Blueprint Micro-Grid Background with intensity scaling */}
         <BlueprintMicroGrid 
-          opacity={0.08} 
+          opacity={0.04} 
           parallaxOffset={2} 
           spacing={16}
+          intensityScale={true}
+          centerOpacity={0.02}
+          edgeOpacity={0.06}
+          reduceContrast={true}
         />
         
-        <div className="text-center max-w-6xl mx-auto relative z-10">
-          <div className="inline-block bg-white/95 px-8 py-4 rounded-2xl shadow-lg mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 tracking-wide">
+        <div className="text-center max-w-6xl mx-auto relative z-40">
+          {/* Clean title with subtle underline */}
+          <div className="relative mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide mb-6 drop-shadow-md" style={{ textShadow: '0 0 8px rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.2)' }}>
               Value Proposition
             </h2>
+            {/* Kinetic underline */}
+            <div className="flex justify-center">
+              <KineticHeaderUnderline 
+                width="w-32" 
+                color="bg-white"
+                delay={300}
+              />
+            </div>
           </div>
           
-          {/* Visual Exchange Diagram */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+          {/* CEO Quote Section */}
+          <div className="mb-16 max-w-4xl mx-auto">
+            <blockquote className="text-center">
+              <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-4" style={{ textShadow: '0 0 6px rgba(255,255,255,0.3)' }}>
+                "We go through a rigorous hiring process, seeking builders who want to create so companies don't have to giving students real, impactful work."
+              </p>
+              <cite className="text-white/70 text-sm font-medium tracking-wide">
+                Brady Park, UVA 2027
+              </cite>
+            </blockquote>
+          </div>
+          
+          {/* Visual Exchange Diagram - aligned to blueprint grid */}
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-16" style={{ marginLeft: '8px', marginRight: '8px' }}>
             {/* Dedicated Builders Box */}
             <GlassCard 
               className="w-full max-w-sm"
             >
-              <div className="absolute -top-4 -left-4 w-10 h-10 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="w-5 h-5 bg-white rounded-md flex items-center justify-center">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="ml-4">
-                <h3 className="text-xl font-bold text-slate-800 mb-3 tracking-wide">Dedicated Builders</h3>
-                <ul className="text-sm text-slate-700 space-y-1">
-                  <li>• Smart Builders</li>
-                  <li>• Tech Analysts</li>
-                </ul>
-              </div>
+              <h3 className="text-xl font-bold text-white mb-3 tracking-wide">Dedicated Builders</h3>
+              <ul className="text-sm text-white/80 space-y-1">
+                <li>• Smart Builders</li>
+                <li>• Tech Analysts</li>
+              </ul>
             </GlassCard>
             
-            {/* Arrows Container */}
+            {/* Sleek Arrows Container */}
             <div className="flex flex-col lg:flex-row items-center gap-8">
               {/* Forward Arrow */}
               <div className="flex items-center space-x-3">
-                <div className="w-16 h-0.5 bg-gradient-to-r from-blue-400 to-transparent"></div>
-                <div className="w-0 h-0 border-l-[12px] border-l-blue-500 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent"></div>
+                <div className="w-16 h-0.5 bg-gradient-to-r from-white to-white/40 shadow-lg"></div>
+                <div className="w-0 h-0 border-l-[10px] border-l-white border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent drop-shadow-lg"></div>
               </div>
               
               {/* Backward Arrow */}
               <div className="flex items-center space-x-3">
-                <div className="w-0 h-0 border-r-[12px] border-r-indigo-500 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent"></div>
-                <div className="w-16 h-0.5 bg-gradient-to-l from-indigo-400 to-transparent"></div>
+                <div className="w-0 h-0 border-r-[10px] border-r-white border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent drop-shadow-lg"></div>
+                <div className="w-16 h-0.5 bg-gradient-to-l from-white to-white/40 shadow-lg"></div>
               </div>
             </div>
             
@@ -120,62 +131,30 @@ export default function HomePage() {
             <GlassCard 
               className="w-full max-w-sm"
             >
-              <div className="absolute -top-4 -right-4 w-10 h-10 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
-                <div className="w-5 h-5 bg-white rounded-md flex items-center justify-center">
-                  <div className="w-2 h-2 bg-indigo-500 rounded-full"></div>
-                </div>
-              </div>
-              
-              <div className="mr-4">
-                <h3 className="text-xl font-bold text-slate-800 mb-3 tracking-wide">Industry Clients</h3>
-                <ul className="text-sm text-slate-700 space-y-1">
-                  <li>• Real Projects</li>
-                  <li>• Tech Opportunities</li>
-                </ul>
-              </div>
+              <h3 className="text-xl font-bold text-white mb-3 tracking-wide">Industry Clients</h3>
+              <ul className="text-sm text-white/80 space-y-1">
+                <li>• Real Projects</li>
+                <li>• Tech Opportunities</li>
+              </ul>
             </GlassCard>
           </div>
         </div>
         
-        {/* First Client Presentation Showcase */}
+        {/* Client Presentation Image */}
         <div className="mt-20 text-center">
-          <div className="inline-block bg-white/95 px-8 py-4 rounded-2xl shadow-lg mb-6">
-            <h3 className="text-3xl font-bold text-slate-800 tracking-wide">Our First Client Presentation</h3>
-          </div>
-          <div className="inline-block bg-white/90 px-6 py-3 rounded-xl shadow-md mb-12 max-w-4xl mx-auto">
-            <p className="text-lg text-slate-700 leading-relaxed">
-              TSG Members Presenting To Our First-Ever Client, Showcasing Our Strategic Analysis And Recommendations.
-            </p>
-          </div>
           <div className="max-w-5xl mx-auto">
             <img 
               src="/tsg1.png" 
               alt="TSG members presenting to first client" 
               className="w-full h-auto rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]"
             />
+            <p className="text-white italic mt-4 text-lg">
+              TSG members presenting to our first ever client
+            </p>
           </div>
         </div>
       </Section>
 
-      {/* Upcoming Events Section */}
-      <Section className="bg-tsg-gray-50">
-        <SectionHeading>Upcoming Events</SectionHeading>
-        <SectionSubheading>
-          Join us for our next events and start building your strategic thinking skills.
-        </SectionSubheading>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {upcomingEvents.map((event) => (
-            <EventCard key={event.id} event={event} />
-          ))}
-        </div>
-        
-        <div className="text-center">
-          <Link href="/events" className="btn-primary">
-            View All Events
-          </Link>
-        </div>
-      </Section>
 
       {/* Member Spotlight Section */}
       <Section>
@@ -193,65 +172,6 @@ export default function HomePage() {
         <SponsorGrid sponsors={sponsorsData} />
       </Section>
 
-      {/* How We Operate Section */}
-      <Section id="about" className="bg-gradient-to-b from-white to-slate-50">
-        <SectionHeading>How We Operate</SectionHeading>
-        <div className="max-w-5xl mx-auto">
-          <div className="space-y-12">
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">
-                1
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Project-Based Learning</h3>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                  Our members work on real strategic challenges with actual companies and organizations. 
-                  This hands-on approach ensures that learning is practical, relevant, and immediately applicable.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">
-                2
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Industry Connections</h3>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                  We maintain strong relationships with industry professionals, alumni, and companies. 
-                  These connections provide mentorship, networking opportunities, and real-world insights.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-purple-600 to-pink-700 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">
-                3
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Skill Development</h3>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                  Through workshops, case competitions, and structured learning programs, we help members 
-                  develop the analytical, communication, and leadership skills needed for success.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col md:flex-row items-start gap-8">
-              <div className="flex-shrink-0 w-20 h-20 bg-gradient-to-br from-pink-600 to-red-700 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg">
-                4
-              </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg border border-slate-200">
-                <h3 className="text-2xl font-semibold text-slate-800 mb-4">Community Support</h3>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                  We foster a supportive community where members can learn from each other, share experiences, 
-                  and build lasting friendships with like-minded peers.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Section>
 
       {/* Team Section */}
       <Section className="bg-tsg-gray-50" id="team">

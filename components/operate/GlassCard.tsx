@@ -13,8 +13,14 @@ export function GlassCard({
 }: GlassCardProps) {
   return (
     <div className={`relative ${className}`}>
-      {/* Simple card container */}
-      <div className="relative bg-white/90 backdrop-blur-sm border border-white/60 rounded-3xl p-12 shadow-lg">
+      {/* Simplified glass surface */}
+      <div className="relative bg-white/30 backdrop-blur-md rounded-2xl p-8">
+        {/* Subtle corner ticks */}
+        <div className="absolute top-3 left-3 w-3 h-3 border-t border-l border-white/60"></div>
+        <div className="absolute top-3 right-3 w-3 h-3 border-t border-r border-white/60"></div>
+        <div className="absolute bottom-3 left-3 w-3 h-3 border-b border-l border-white/60"></div>
+        <div className="absolute bottom-3 right-3 w-3 h-3 border-b border-r border-white/60"></div>
+        
         {/* Content */}
         <div className="relative z-10">
           {children}
