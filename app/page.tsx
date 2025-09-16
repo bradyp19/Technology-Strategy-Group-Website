@@ -2,14 +2,11 @@ import Link from 'next/link'
 import { Section, SectionHeading, SectionSubheading } from '@/components/Section'
 import LogoMarquee from '@/components/LogoMarquee'
 import MemberSpotlight from '@/components/MemberSpotlight'
-import SponsorGrid from '@/components/SponsorGrid'
 import { GlassCard } from '@/components/operate/GlassCard'
 import { BlueprintMicroGrid } from '@/components/operate/BlueprintMicroGrid'
 import { KineticHeaderUnderline } from '@/components/operate/KineticHeaderUnderline'
-import sponsorsData from '@/data/sponsors.json'
 import membersData from '@/data/members.json'
 import teamData from '@/data/team.json'
-import testimonialsData from '@/data/testimonials.json'
 import Image from 'next/image'
 
 export default function HomePage() {
@@ -17,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] sm:h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Background Image with better resolution */}
         <div className="absolute inset-0">
           <img 
@@ -38,18 +35,18 @@ export default function HomePage() {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 text-balance leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 md:mb-8 text-balance leading-tight text-white drop-shadow-[0_4px_8px_rgba(0,0,0,0.8)]">
               Technology Strategy Group
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl text-white mb-8 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] px-4">
               The biggest tech-consulting and student-builder club at UVA with over 50+ past clients.
             </p>
           </div>
         </div>
         
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 text-white/60 animate-bounce">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>
         </div>
@@ -71,16 +68,16 @@ export default function HomePage() {
           reduceContrast={true}
         />
         
-        <div className="text-center max-w-6xl mx-auto relative z-40">
+        <div className="text-center max-w-6xl mx-auto relative z-40 px-4">
           {/* Clean title with subtle underline */}
-          <div className="relative mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-wide mb-6 drop-shadow-md" style={{ textShadow: '0 0 8px rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.2)' }}>
+          <div className="relative mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wide mb-4 sm:mb-6 drop-shadow-md" style={{ textShadow: '0 0 8px rgba(255,255,255,0.4), 0 1px 2px rgba(0,0,0,0.2)' }}>
               Value Proposition
             </h2>
             {/* Kinetic underline */}
             <div className="flex justify-center">
               <KineticHeaderUnderline 
-                width="w-32" 
+                width="w-24 sm:w-32" 
                 color="bg-white"
                 delay={300}
               />
@@ -88,24 +85,24 @@ export default function HomePage() {
           </div>
           
           {/* CEO Quote Section */}
-          <div className="mb-16 max-w-4xl mx-auto">
+          <div className="mb-8 sm:mb-12 md:mb-16 max-w-4xl mx-auto">
             <blockquote className="text-center">
-              <p className="text-xl md:text-2xl text-white/90 italic leading-relaxed mb-4" style={{ textShadow: '0 0 6px rgba(255,255,255,0.3)' }}>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 italic leading-relaxed mb-4 px-4" style={{ textShadow: '0 0 6px rgba(255,255,255,0.3)' }}>
                 "We go through a rigorous hiring process, seeking builders who want to create so companies don't have to giving students real, impactful work."
               </p>
-              <cite className="text-white/70 text-sm font-medium tracking-wide">
+              <cite className="text-white/70 text-xs sm:text-sm font-medium tracking-wide">
                 Brady Park, UVA 2027
               </cite>
             </blockquote>
           </div>
           
           {/* Visual Exchange Diagram - aligned to blueprint grid */}
-          <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-16" style={{ marginLeft: '8px', marginRight: '8px' }}>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-6 sm:gap-8 lg:gap-16 px-4">
             {/* Dedicated Builders Box */}
             <GlassCard 
-              className="w-full max-w-sm"
+              className="w-full max-w-xs sm:max-w-sm"
             >
-              <h3 className="text-xl font-bold text-white mb-3 tracking-wide">Dedicated Builders</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 tracking-wide">Dedicated Builders</h3>
               <ul className="text-sm text-white/80 space-y-1">
                 <li>• Smart Builders</li>
                 <li>• Tech Analysts</li>
@@ -113,25 +110,25 @@ export default function HomePage() {
             </GlassCard>
             
             {/* Sleek Arrows Container */}
-            <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
               {/* Forward Arrow */}
-              <div className="flex items-center space-x-3">
-                <div className="w-16 h-0.5 bg-gradient-to-r from-white to-white/40 shadow-lg"></div>
-                <div className="w-0 h-0 border-l-[10px] border-l-white border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent drop-shadow-lg"></div>
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <div className="w-12 sm:w-16 h-0.5 bg-gradient-to-r from-white to-white/40 shadow-lg"></div>
+                <div className="w-0 h-0 border-l-[8px] sm:border-l-[10px] border-l-white border-t-[6px] sm:border-t-[7px] border-t-transparent border-b-[6px] sm:border-b-[7px] border-b-transparent drop-shadow-lg"></div>
               </div>
               
               {/* Backward Arrow */}
-              <div className="flex items-center space-x-3">
-                <div className="w-0 h-0 border-r-[10px] border-r-white border-t-[7px] border-t-transparent border-b-[7px] border-b-transparent drop-shadow-lg"></div>
-                <div className="w-16 h-0.5 bg-gradient-to-l from-white to-white/40 shadow-lg"></div>
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <div className="w-0 h-0 border-r-[8px] sm:border-r-[10px] border-r-white border-t-[6px] sm:border-t-[7px] border-t-transparent border-b-[6px] sm:border-b-[7px] border-b-transparent drop-shadow-lg"></div>
+                <div className="w-12 sm:w-16 h-0.5 bg-gradient-to-l from-white to-white/40 shadow-lg"></div>
               </div>
             </div>
             
             {/* Industry Clients Box */}
             <GlassCard 
-              className="w-full max-w-sm"
+              className="w-full max-w-xs sm:max-w-sm"
             >
-              <h3 className="text-xl font-bold text-white mb-3 tracking-wide">Industry Clients</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3 tracking-wide">Industry Clients</h3>
               <ul className="text-sm text-white/80 space-y-1">
                 <li>• Real Projects</li>
                 <li>• Tech Opportunities</li>
@@ -141,14 +138,14 @@ export default function HomePage() {
         </div>
         
         {/* Client Presentation Image */}
-        <div className="mt-20 text-center">
+        <div className="mt-12 sm:mt-16 md:mt-20 text-center px-4">
           <div className="max-w-5xl mx-auto">
             <img 
               src="/tsg1.png" 
               alt="TSG members presenting to first client" 
               className="w-full h-auto rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-[1.02]"
             />
-            <p className="text-white italic mt-4 text-lg">
+            <p className="text-white italic mt-3 sm:mt-4 text-sm sm:text-base md:text-lg">
               TSG members presenting to our first ever client
             </p>
           </div>
@@ -158,20 +155,8 @@ export default function HomePage() {
 
       {/* Member Spotlight Section */}
       <Section>
-        <SectionHeading>Member Spotlight</SectionHeading>
         <MemberSpotlight members={membersData} />
       </Section>
-
-      {/* Sponsors Section */}
-      <Section className="bg-tsg-gray-50">
-        <SectionHeading>Our Sponsors</SectionHeading>
-        <SectionSubheading>
-          We're grateful for the support of leading companies and organizations that share our vision.
-        </SectionSubheading>
-        
-        <SponsorGrid sponsors={sponsorsData} />
-      </Section>
-
 
       {/* Team Section */}
       <Section className="bg-tsg-gray-50" id="team">
@@ -217,65 +202,44 @@ export default function HomePage() {
       {/* Testimonials Section */}
       <Section id="testimonials">
         <SectionHeading>Success Stories</SectionHeading>
-        <SectionSubheading>
-          Hear from our alumni who have gone on to excel at top companies in consulting, technology, and strategy roles.
-        </SectionSubheading>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white border border-tsg-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-200">
-              {/* Rating Stars */}
-              <div className="flex mb-4">
-                {[...Array(testimonial.rating)].map((_, i) => (
-                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-              </div>
-              
-              {/* Quote */}
-              <blockquote className="text-tsg-gray-700 mb-6 italic leading-relaxed">
-                "{testimonial.quote}"
-              </blockquote>
-              
-              {/* Author Info */}
-              <div className="flex items-center">
-                <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4 flex-shrink-0">
+        {/* Testimonials Images Gallery */}
+        <div className="mb-12 sm:mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
+            {[1, 2, 3, 4, 5, 6, 7].map((num) => (
+              <div key={num} className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-gradient-to-br from-tsg-navy/10 to-tsg-navy/5 flex items-center justify-center">
                   <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    fill
-                    className="object-cover"
+                    src={`/testimonial${num}.png`}
+                    alt={`Success story ${num}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-auto object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div>
-                  <div className="font-semibold text-tsg-navy">{testimonial.name}</div>
-                  <div className="text-sm text-tsg-gray-600">{testimonial.role}</div>
-                  <div className="text-sm text-tsg-gray-500">{testimonial.company}</div>
-                  <div className="text-xs text-tsg-gray-400">Class of {testimonial.graduationYear}</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4">
+                    <p className="text-white text-xs sm:text-sm font-medium">Success Story #{num}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <div className="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
           <div>
-            <div className="text-4xl font-bold text-tsg-navy mb-2">95%</div>
-            <div className="text-tsg-gray-600 uppercase tracking-wide">Placement Rate</div>
+            <div className="text-3xl sm:text-4xl font-bold text-tsg-navy mb-2">$90K</div>
+            <div className="text-tsg-gray-600 uppercase tracking-wide text-xs sm:text-sm">Average Starting Salary</div>
           </div>
           <div>
-            <div className="text-4xl font-bold text-tsg-navy mb-2">$120K</div>
-            <div className="text-tsg-gray-600 uppercase tracking-wide">Average Starting Salary</div>
+            <div className="text-3xl sm:text-4xl font-bold text-tsg-navy mb-2">20+</div>
+            <div className="text-tsg-gray-600 uppercase tracking-wide text-xs sm:text-sm">Companies Represented</div>
           </div>
           <div>
-            <div className="text-4xl font-bold text-tsg-navy mb-2">50+</div>
-            <div className="text-tsg-gray-600 uppercase tracking-wide">Companies Represented</div>
-          </div>
-          <div>
-            <div className="text-4xl font-bold text-tsg-navy mb-2">3</div>
-            <div className="text-tsg-gray-600 uppercase tracking-wide">Years Average</div>
+            <div className="text-3xl sm:text-4xl font-bold text-tsg-navy mb-2">3</div>
+            <div className="text-tsg-gray-600 uppercase tracking-wide text-xs sm:text-sm">Years Average</div>
           </div>
         </div>
       </Section>
@@ -285,19 +249,19 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(59,130,246,0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(99,102,241,0.1),transparent_50%)]"></div>
         
-        <div className="relative z-10">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent">
+        <div className="relative z-10 px-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-white via-blue-100 to-indigo-100 bg-clip-text text-transparent">
               Get In Touch
             </h2>
-            <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto font-light">
+            <p className="text-base sm:text-lg md:text-xl text-blue-100 mb-6 sm:mb-8 max-w-2xl mx-auto font-light">
               Ready to join TSG or have questions? We'd love to hear from you.
             </p>
           </div>
           
           <div className="max-w-2xl mx-auto">
-            <form className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <form className="space-y-4 sm:space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-medium text-blue-100 mb-2">
                     First Name
@@ -307,7 +271,7 @@ export default function HomePage() {
                     id="firstName"
                     name="firstName"
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm sm:text-base"
                     placeholder="Your first name"
                   />
                 </div>
@@ -320,7 +284,7 @@ export default function HomePage() {
                     id="lastName"
                     name="lastName"
                     required
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                    className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm sm:text-base"
                     placeholder="Your last name"
                   />
                 </div>
@@ -335,7 +299,7 @@ export default function HomePage() {
                   id="email"
                   name="email"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm sm:text-base"
                   placeholder="your.email@virginia.edu"
                 />
               </div>
@@ -348,7 +312,7 @@ export default function HomePage() {
                   id="subject"
                   name="subject"
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-sm sm:text-base"
                 >
                   <option value="" className="text-gray-800">Select a topic</option>
                   <option value="membership" className="text-gray-800">Membership Inquiry</option>
@@ -366,9 +330,9 @@ export default function HomePage() {
                 <textarea
                   id="message"
                   name="message"
-                  rows={5}
+                  rows={4}
                   required
-                  className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent resize-none"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent resize-none text-sm sm:text-base"
                   placeholder="Tell us more about your interest in TSG..."
                 />
               </div>
@@ -376,7 +340,7 @@ export default function HomePage() {
               <div className="text-center">
                 <button
                   type="submit"
-                  className="group relative inline-flex px-8 py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full font-semibold text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:-translate-y-1 transition-all duration-300"
+                  className="group relative inline-flex px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-500 to-indigo-500 text-white rounded-full font-semibold text-base sm:text-lg shadow-2xl hover:shadow-blue-500/25 transform hover:-translate-y-1 transition-all duration-300"
                 >
                   <span className="relative z-10">Send Message</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-indigo-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

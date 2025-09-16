@@ -1,30 +1,37 @@
 [
   {
-    "name": "Sarah Chen",
-    "photo": "/members/sarah-chen.jpg",
-    "role": "Strategy Lead",
-    "blurb": "Led our team to victory in the McKinsey case competition, developing a comprehensive digital transformation strategy for a Fortune 500 retailer. Now interning at Bain & Company.",
-    "linkedin": "https://linkedin.com/in/sarah-chen-tsg"
+    "name": "Rohan Singh",
+    "photo": "/team/rohansingh.jpeg",
+    "role": "Member Spotlight",
+    "blurb": "Built scalable fintech solutions at Freddie Mac, delivering enterprise-grade software that processed millions in mortgage transactions.",
+    "linkedin": "https://www.linkedin.com/in/rohansingh4/"
   },
   {
-    "name": "Marcus Rodriguez",
-    "photo": "/members/marcus-rodriguez.jpg",
-    "role": "Technology Director",
-    "blurb": "Spearheaded our AI strategy research project, analyzing emerging technologies and their strategic implications for enterprise companies. Accepted full-time offer at Microsoft.",
-    "linkedin": "https://linkedin.com/in/marcus-rodriguez-tsg"
+    "name": "Sid Pradhan",
+    "photo": "/team/sidpradhan.jpeg",
+    "role": "Member Spotlight",
+    "blurb": "Intered twice at Eurex's algorithmic trading platform and secured a Goldman Sachs wealth management internship for the summer of 2026.",
+    "linkedin": "https://www.linkedin.com/in/sid-pradhan5/"
   },
   {
-    "name": "Priya Patel",
-    "photo": "/members/priya-patel.jpg",
-    "role": "Events Coordinator",
-    "blurb": "Organized our largest networking event of the year, connecting 150+ students with industry professionals. Secured summer internship at Deloitte Consulting.",
-    "linkedin": "https://linkedin.com/in/priya-patel-tsg"
+    "name": "Caroline Xu",
+    "photo": "/team/carolinexu.png",
+    "role": "Member Spotlight",
+    "blurb": "Led SQL migration initiatives at SAS, optimizing data infrastructure for enterprise clients and reducing query processing time by 40%.",
+    "linkedin": "https://www.linkedin.com/in/caroline-xu1/"
   },
   {
-    "name": "Alex Thompson",
-    "photo": "/members/alex-thompson.jpg",
-    "role": "Project Manager",
-    "blurb": "Managed our consulting project with a local startup, delivering strategic recommendations that helped secure their Series A funding. Joining Amazon's strategy team.",
-    "linkedin": "https://linkedin.com/in/alex-thompson-tsg"
+    "name": "Grace Pereira",
+    "photo": "/team/gracepereira.jpeg",
+    "role": "VP of Communications",
+    "blurb": "Drives TSG's strategic communications and won Bain's women's case competition, showcasing exceptional analytical and presentation skills.",
+    "linkedin": "https://www.linkedin.com/in/grace-pereira-77a8a1233/"
+  },
+  {
+    "name": "Brady Park",
+    "photo": "/team/bradypark.jpeg",
+    "role": "VP of Operations",
+    "blurb": "QuestBridge and Echols scholar who recently secured a $5,000 scholarship from Jihoon Rim, former CEO of KakooCorp.",
+    "linkedin": "https://www.linkedin.com/in/brady-park-9a5469208/"
   }
 ]

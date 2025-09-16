@@ -36,8 +36,13 @@
   },
   {
     "name": "Goldman Sachs",
-    "logo": "/sponsors/goldman-sachs.svg",
+    "logo": "/logos/companies/goldmansachs.jpeg",
     "url": "https://www.goldmansachs.com"
+  },
+  {
+    "name": "Eurex",
+    "logo": "/logos/companies/eurex.png",
+    "url": "https://www.eurex.com"
   },
   {
     "name": "EY",
