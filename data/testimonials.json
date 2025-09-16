@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Chen",
+    "role": "Product Manager",
+    "company": "Google",
+    "graduationYear": "2023",
+    "quote": "TSG gave me the strategic thinking skills and real-world project experience that directly led to my role at Google. The hands-on approach to solving complex business problems was invaluable.",
+    "image": "/members/sarah-chen.jpg",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Marcus Rodriguez",
+    "role": "Management Consultant",
+    "company": "McKinsey & Company",
+    "graduationYear": "2022",
+    "quote": "The case competitions and consulting projects at TSG prepared me perfectly for McKinsey. I learned to think strategically about technology and business in ways that set me apart from other candidates.",
+    "image": "/members/marcus-rodriguez.jpg",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Priya Patel",
+    "role": "Technology Strategy Analyst",
+    "company": "Microsoft",
+    "graduationYear": "2023",
+    "quote": "TSG's focus on bridging technology and strategy was exactly what I needed. The mentorship program and industry connections helped me land my dream role at Microsoft.",
+    "image": "/members/priya-patel.jpg",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Alex Thompson",
+    "role": "Business Analyst",
+    "company": "Amazon",
+    "graduationYear": "2022",
+    "quote": "The real-world projects with actual companies gave me confidence and skills that I use every day at Amazon. TSG taught me how to think like a strategist.",
+    "image": "/members/alex-thompson.jpg",
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "name": "Emily Watson",
+    "role": "Strategy Consultant",
+    "company": "Bain & Company",
+    "graduationYear": "2021",
+    "quote": "TSG's rigorous approach to case analysis and strategic thinking was the perfect preparation for Bain. The collaborative environment and focus on real impact made all the difference.",
+    "image": "/team/emily-watson.jpg",
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "name": "Jordan Williams",
+    "role": "Product Strategy Manager",
+    "company": "Meta",
+    "graduationYear": "2022",
+    "quote": "The technology strategy focus at TSG was unique and exactly what I needed for my career in tech. The projects and mentorship were instrumental in my success at Meta.",
+    "image": "/team/jordan-williams.jpg",
+    "rating": 5
+  }
+]

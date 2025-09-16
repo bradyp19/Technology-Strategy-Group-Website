@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Pawlos Belay",
+    "role": "Co-Founder & Co-President",
+    "photo": "/team/pawlosbelay.jpeg",
+    "linkedin": "https://linkedin.com/in/pawlos-belay"
+  },
+  {
+    "name": "Thomas Lyman",
+    "role": "Co-Founder & Co-President",
+    "photo": "/team/thomaslyman.jpeg",
+    "linkedin": "https://www.linkedin.com/in/thomas-t-lyman/"
+  },
+  {
+    "name": "Grace Pereira",
+    "role": "VP of Communications",
+    "photo": "/team/gracepereira.jpeg",
+    "linkedin": "https://www.linkedin.com/in/grace-pereira-77a8a1233/"
+  },
+  {
+    "name": "Brady Park",
+    "role": "VP of Operations",
+    "photo": "/team/bradypark.jpeg",
+    "linkedin": "https://www.linkedin.com/in/brady-park-9a5469208/"
+  },
+  {
+    "name": "Daniel Brock",
+    "role": "VP of Consulting",
+    "photo": "/team/danielbrock.jpeg",
+    "linkedin": "https://www.linkedin.com/in/dbrock722/"
+  },
+  {
+    "name": "Rohan Misra",
+    "role": "VP of Recruitment",
+    "photo": "/team/rohanmisra.jpeg",
+    "linkedin": "https://linkedin.com/in/rohanmisra27"
+  }
+]

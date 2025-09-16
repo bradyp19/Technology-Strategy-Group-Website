@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Tech Strategy Workshop",
+    "date": "2024-02-15",
+    "time": "6:00 PM",
+    "location": "Rice Hall 130",
+    "summary": "Learn frameworks for analyzing technology trends and making strategic decisions in fast-moving industries.",
+    "link": "/events/tech-strategy-workshop"
+  },
+  {
+    "id": "2",
+    "title": "Consulting Case Competition",
+    "date": "2024-02-22",
+    "time": "5:30 PM",
+    "location": "McIntire School of Commerce",
+    "summary": "Compete with peers to solve real business challenges and develop strategic recommendations.",
+    "link": "/events/consulting-competition"
+  },
+  {
+    "id": "3",
+    "title": "Alumni Networking Night",
+    "date": "2024-03-01",
+    "time": "7:00 PM",
+    "location": "Rotunda Dome Room",
+    "summary": "Connect with TSG alumni working in technology strategy, consulting, and product management.",
+    "link": "/events/alumni-networking"
+  },
+  {
+    "id": "4",
+    "title": "Industry Panel: AI Strategy",
+    "date": "2024-03-08",
+    "time": "6:30 PM",
+    "location": "Clark Hall 108",
+    "summary": "Industry leaders discuss how companies are developing AI strategy and navigating emerging technologies.",
+    "link": "/events/ai-strategy-panel"
+  },
+  {
+    "id": "5",
+    "title": "Spring Strategy Challenge",
+    "date": "2024-03-15",
+    "time": "9:00 AM",
+    "location": "Various Locations",
+    "summary": "24-hour hackathon focused on solving real business strategy problems with technology solutions.",
+    "link": "/events/spring-challenge"
+  }
+]

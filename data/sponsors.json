@@ -1,0 +1,82 @@
+[
+  {
+    "name": "McKinsey & Company",
+    "logo": "/sponsors/mckinsey.svg",
+    "url": "https://www.mckinsey.com"
+  },
+  {
+    "name": "Bain & Company",
+    "logo": "/sponsors/bain.svg",
+    "url": "https://www.bain.com"
+  },
+  {
+    "name": "Boston Consulting Group",
+    "logo": "/sponsors/bcg.svg",
+    "url": "https://www.bcg.com"
+  },
+  {
+    "name": "Deloitte",
+    "logo": "/sponsors/deloitte.svg",
+    "url": "https://www.deloitte.com"
+  },
+  {
+    "name": "Amazon",
+    "logo": "/sponsors/amazon.svg",
+    "url": "https://www.amazon.com"
+  },
+  {
+    "name": "Microsoft",
+    "logo": "/sponsors/microsoft.svg",
+    "url": "https://www.microsoft.com"
+  },
+  {
+    "name": "Google",
+    "logo": "/sponsors/google.svg",
+    "url": "https://www.google.com"
+  },
+  {
+    "name": "Goldman Sachs",
+    "logo": "/sponsors/goldman-sachs.svg",
+    "url": "https://www.goldmansachs.com"
+  },
+  {
+    "name": "EY",
+    "logo": "/logos/companies/EYlogo.png",
+    "url": "https://www.ey.com"
+  },
+  {
+    "name": "Capital One",
+    "logo": "/logos/companies/capitalonelogo.png",
+    "url": "https://www.capitalone.com"
+  },
+  {
+    "name": "Leidos",
+    "logo": "/logos/companies/leidoslogo.png",
+    "url": "https://www.leidos.com"
+  },
+  {
+    "name": "Silver Lake",
+    "logo": "/logos/companies/silverlakelogo.png",
+    "url": "https://www.silverlake.com"
+  },
+  {
+    "name": "Strategy",
+    "logo": "/logos/companies/strategylogo.png",
+    "url": "https://www.strategy.com"
+  },
+  {
+    "name": "Riipen",
+    "logo": "/logos/companies/riipenlogo.png",
+    "url": "https://www.riipen.com"
+  },
+  {
+    "name": "Ojasys",
+    "logo": "/logos/companies/ojasyslogo.jpeg",
+    "url": "https://www.ojasys.com"
+  },
+  {
+    "name": "Certinia",
+    "logo": "/logos/companies/certinialogo.png",
+    "url": "https://www.certinia.com"
+  }
+]

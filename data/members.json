@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Sarah Chen",
+    "photo": "/members/sarah-chen.jpg",
+    "role": "Strategy Lead",
+    "blurb": "Led our team to victory in the McKinsey case competition, developing a comprehensive digital transformation strategy for a Fortune 500 retailer. Now interning at Bain & Company.",
+    "linkedin": "https://linkedin.com/in/sarah-chen-tsg"
+  },
+  {
+    "name": "Marcus Rodriguez",
+    "photo": "/members/marcus-rodriguez.jpg",
+    "role": "Technology Director",
+    "blurb": "Spearheaded our AI strategy research project, analyzing emerging technologies and their strategic implications for enterprise companies. Accepted full-time offer at Microsoft.",
+    "linkedin": "https://linkedin.com/in/marcus-rodriguez-tsg"
+  },
+  {
+    "name": "Priya Patel",
+    "photo": "/members/priya-patel.jpg",
+    "role": "Events Coordinator",
+    "blurb": "Organized our largest networking event of the year, connecting 150+ students with industry professionals. Secured summer internship at Deloitte Consulting.",
+    "linkedin": "https://linkedin.com/in/priya-patel-tsg"
+  },
+  {
+    "name": "Alex Thompson",
+    "photo": "/members/alex-thompson.jpg",
+    "role": "Project Manager",
+    "blurb": "Managed our consulting project with a local startup, delivering strategic recommendations that helped secure their Series A funding. Joining Amazon's strategy team.",
+    "linkedin": "https://linkedin.com/in/alex-thompson-tsg"
+  }
+]

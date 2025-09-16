@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Digital Transformation Strategy",
+    "summary": "Developed comprehensive digital transformation roadmap for regional healthcare system, identifying $2.3M in cost savings and improved patient outcomes.",
+    "impact": "Strategy implemented across 12 facilities, resulting in 15% efficiency improvement and enhanced patient satisfaction scores.",
+    "tags": ["Healthcare", "Digital Transformation", "Strategy"],
+    "link": "https://uva.edu/tsg/projects/digital-transformation"
+  },
+  {
+    "title": "AI Ethics Framework",
+    "summary": "Created ethical guidelines for AI implementation in financial services, addressing bias, transparency, and accountability concerns.",
+    "impact": "Framework adopted by three major banks, influencing industry standards and regulatory discussions.",
+    "tags": ["AI", "Ethics", "Financial Services", "Policy"],
+    "link": "https://uva.edu/tsg/projects/ai-ethics"
+  },
+  {
+    "title": "Supply Chain Optimization",
+    "summary": "Analyzed global supply chain for manufacturing company, identifying bottlenecks and developing risk mitigation strategies.",
+    "impact": "Reduced lead times by 23% and improved supplier diversity by 40%, enhancing resilience during disruptions.",
+    "tags": ["Supply Chain", "Operations", "Risk Management"],
+    "link": "https://uva.edu/tsg/projects/supply-chain"
+  },
+  {
+    "title": "Market Entry Strategy",
+    "summary": "Researched emerging markets for tech startup expansion, evaluating regulatory environments and competitive landscapes.",
+    "impact": "Guided successful entry into two Southeast Asian markets, achieving 150% growth in first year.",
+    "tags": ["Market Entry", "International", "Startup"],
+    "link": "https://uva.edu/tsg/projects/market-entry"
+  },
+  {
+    "title": "Sustainability Assessment",
+    "summary": "Conducted comprehensive sustainability audit for retail chain, identifying opportunities for environmental impact reduction.",
+    "impact": "Implemented initiatives reducing carbon footprint by 30% and improving brand perception scores.",
+    "tags": ["Sustainability", "Retail", "Environmental"],
+    "link": "https://uva.edu/tsg/projects/sustainability"
+  },
+  {
+    "title": "Product Strategy Analysis",
+    "summary": "Evaluated product portfolio for software company, recommending feature prioritization and market positioning strategies.",
+    "impact": "Informed product roadmap decisions, leading to 25% increase in user engagement and retention.",
+    "tags": ["Product Strategy", "Software", "User Experience"],
+    "link": "https://uva.edu/tsg/projects/product-strategy"
+  }
+]
