@@ -39,7 +39,7 @@ export default function HomePage() {
               Technology Strategy Group
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] px-4">
-              The biggest tech-consulting and student-builder club at UVA with over 50+ past clients.
+              The biggest tech-consulting and student-builder club at UVA with over 10+ past clients.
             </p>
           </div>
         </div>
